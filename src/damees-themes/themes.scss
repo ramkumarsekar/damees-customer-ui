@@ -1,0 +1,26 @@
+$theme-colors: (
+  "primary":  rgb(14,61,68),
+  "danger": #ff4136,
+  "black" : #000000,
+  "white" : #ffffff
+);
+
+:root {
+    // --bs-body-bg: #f5faff; //  #f1f3f6
+    --bs-primary      : rgb(14,61,68);
+    --bs-primary-rgb  : rgb(14,61,68);
+    --bs-secondary    : #ff4136;
+    --bs-secondary-rgb: 189, 47, 45;
+    --bs-warning      : #ff9e1b;
+    --bs-warning-rgb  : 255, 158, 27;
+}
+
+.card {
+    border: none;
+    border-radius: 40px !important;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+
+// Bootstrap and its default variables
+@import "node_modules/bootstrap/scss/bootstrap";
