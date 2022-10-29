@@ -1,5 +1,5 @@
 $theme-colors: (
-  "primary":  rgb(14,61,68),
+  "primary":  #091619,
   "danger": #ff4136,
   "black" : #000000,
   "white" : #ffffff
@@ -7,7 +7,7 @@ $theme-colors: (
 
 :root {
     // --bs-body-bg: #f5faff; //  #f1f3f6
-    --bs-primary      : rgb(14,61,68);
+    --bs-primary      : #091619;
     --bs-primary-rgb  : rgb(14,61,68);
     --bs-secondary    : #ff4136;
     --bs-secondary-rgb: 189, 47, 45;
