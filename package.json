@@ -3,9 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --o",
-    "build": "ng build --prod --base-href 'https://ramkumarsekar.github.io/damees-customer-ui/",
-    "wrap" : "ngh --dir dist/damees-customer-module",
+    "start": "ng serve",
+    "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "host": "ng serve --host=0.0.0.0"
