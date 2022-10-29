@@ -1,0 +1,23 @@
+.footer-list{
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    li{
+        padding: 1rem;
+    }
+}
+
+.logo{
+    h3{
+        letter-spacing: 3px;;
+    }
+    p{
+        word-spacing: 5px;
+    }
+}
+
+.footer{
+    background-image: linear-gradient(to right, #091619, #0e2228,#11292d);
+}

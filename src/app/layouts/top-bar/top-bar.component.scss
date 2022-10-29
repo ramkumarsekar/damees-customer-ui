@@ -1,0 +1,49 @@
+.location {
+    button{
+        border-radius: 30px;
+    }
+}
+
+.hire {
+    button{
+        border-radius: 30px;
+    }
+}
+
+.post {
+    button{
+        border-radius: 30px;
+    }
+}
+
+.timing{
+    display: flex;
+    flex-direction: column;
+}
+
+.authentication{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bs-primary);
+    border-radius: 10px;
+}
+
+.search-bar{
+    margin: auto;
+    max-width: 700px;
+    input[type=text]{
+        border-radius: 30px;
+        border: 5px solid;
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }:focus{
+        border-color: var(--bs-primary-rgb);
+    }
+    button{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border: 5px solid var(--bs-primary);
+    }
+}

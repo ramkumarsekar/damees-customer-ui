@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import "damees-themes/themes.scss";
+@import "damees-themes/font-customize.scss";
+@import "damees-themes/input-fields.scss";
+
+html, body {
+    font-family: 'Reem Kufi Fun', sans-serif;
+}
