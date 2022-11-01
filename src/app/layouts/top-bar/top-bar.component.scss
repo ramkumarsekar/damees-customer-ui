@@ -34,6 +34,8 @@
     input[type=text]{
         border-radius: 30px;
         border: 5px solid;
+        border-top-left-radius: 30px !important;
+        border-bottom-left-radius: 30px !important;
         border-top-right-radius: 0 !important;
         border-bottom-right-radius: 0 !important;
     }:focus{
