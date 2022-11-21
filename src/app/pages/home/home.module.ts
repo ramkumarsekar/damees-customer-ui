@@ -15,7 +15,7 @@ import { ProductServicesModule } from 'src/app/components/product-services/produ
     CommonModule,
     HomeRoutingModule,
     CategoriesModule,
-    ProductServicesModule
+    ProductServicesModule,
   ]
 })
 export class HomeModule { }
