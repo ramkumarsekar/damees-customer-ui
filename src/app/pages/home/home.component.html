@@ -21,3 +21,30 @@
         </div>
     </div>
 </div>
+
+<ngr-model [showDialogBox]="showDialog" [closeButton]="true" position="bottom" (closeDialogBox)="showDialog = false">
+    <div class="container px-5">
+        <div class="usericon text-center">
+            <i class="bi bi-person-fill display-1 text-primary"></i>
+        </div>
+        <div class="authentication mt-4 text-center">
+            <button class="btn btn-white border-primary rounded-bottom-0">
+                SignUp
+            </button>
+            <button class="btn btn-primary rounded-top-0">
+                Login
+            </button>
+        </div>
+        <div class="my-4">
+            <input type="text" class="form-control border-primary" placeholder="Enter Phone Number...">
+        </div>
+        <div class="text-center">
+            <p>HELP CENTER <i class="bi bi-headset"></i></p>
+        </div>
+        <div class="bottom d-flex align-items-baseline">
+            <img width="50" height="35" src="/assets/images/icons/2 dm.png" alt="">
+            <p class="ms-2">Became a Previlage Member</p>
+        </div>
+    </div>
+
+</ngr-model>

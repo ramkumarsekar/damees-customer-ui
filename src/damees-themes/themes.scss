@@ -1,5 +1,5 @@
 $theme-colors: (
-  "primary":  #091619,
+  "primary":  #11292d,
   "danger": #ff4136,
   "black" : #000000,
   "white" : #ffffff
@@ -14,17 +14,3 @@ $theme-colors: (
     --bs-warning      : #ff9e1b;
     --bs-warning-rgb  : 255, 158, 27;
 }
-
-.white-space-nowrap{
-  white-space: nowrap;
-}
-
-.card {
-    border: none;
-    border-radius: 40px !important;
-    box-shadow: 5px 10px 18px #888888;
-}
-
-
-// Bootstrap and its default variables
-@import "node_modules/bootstrap/scss/bootstrap";

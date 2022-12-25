@@ -1,5 +1,15 @@
+.right-sidebar{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    bottom: 50%;
+    z-index: 99;
+}
+
 .location {
     button{
+        display: flex;
+        padding: 12px 30px 9px 30px;
         border-radius: 30px;
     }
 }
@@ -26,6 +36,18 @@
     flex-direction: column;
     background-color: var(--bs-primary);
     border-radius: 10px;
+}
+
+.activeBtn{
+    background-color: var(--bs-primary);
+    color: #fff;
+    transition: 1s;
+}
+
+.inActiveBtn{
+    background-color: #fff;
+    color: var(--bs-primary);
+    transition: .2s;
 }
 
 .search-bar{

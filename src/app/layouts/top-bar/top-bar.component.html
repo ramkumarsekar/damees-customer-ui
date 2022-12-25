@@ -2,22 +2,6 @@
     <div class="row p-3">
         <div class="col-12">
             <div class="d-flex justify-content-between">
-                    <div class="location">
-                        <button class="btn btn-primary text-white px-5 py-3">Location</button>
-                    </div>
-                <div>
-                    <div class="logo">
-                        <img width="100" src="/assets/images/icons/1 dm.png" alt="logo">
-                    </div>
-                    <div class="authentication mt-4 text-center">
-                        <button class="btn btn-white border-primary rounded-bottom-0">
-                            SignUp
-                        </button>
-                        <button class="btn btn-primary rounded-top-0">
-                            Login
-                        </button>
-                    </div>
-                </div>
                 <div>
                     <div class="timing">
                         <p class="display-3 mb-0">
@@ -25,13 +9,38 @@
                         </p>
                         <small class="text-center">27 Tuesday 2022 IND</small>
                     </div>
-                    <div class="post mt-2 text-center">
+                    <div class="post mt-2 text-center d-none d-md-block">
                         <button class="btn btn-primary text-white">Post Your Needs</button>
                     </div>
-                    <div class="hire mt-2 text-center">
+                    <div class="hire mt-2 text-center d-none d-md-block">
                         <button class="btn btn-primary text-white">Hire Yourself</button>
                     </div>
                 </div>
+                <div>
+                    <div class="logo">
+                        <img width="100" src="/assets/images/icons/1 dm.png" alt="logo">
+                    </div>
+                    <div class="authentication mt-4 text-center">
+                        <button (click)="login = false" [ngClass]="{'activeBtn': !login}"
+                            class="btn btn-white border-primary rounded-bottom-0">
+                            SignUp
+                        </button>
+                        <button (click)="login = true" [ngClass]="{'activeBtn': login}"
+                            class="btn btn-white border-primary rounded-top-0">
+                            Login
+                        </button>
+                    </div>
+                </div>
+                <div class="location">
+                    <button class="btn btn-primary text-white">
+                        <span> <i class="bi bi-geo-alt fs-5 me-md-2"></i></span>
+                        <span class="d-none d-md-block">Location</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="right-sidebar">
+                <a type="button" (click)="showRightDialog = true" class="btn btn-primary px-1 py-2"><i class="bi bi-caret-left"></i></a>
             </div>
         </div>
         <div class="col-12">
@@ -39,10 +48,15 @@
                 <div class="input-group mb-3">
                     <input type="text" class="form-control border-primary p-3" placeholder="Search...">
                     <div class="input-group-append">
-                        <button class="btn btn-primary p-3" type="button"><i class="bi bi-search fs-5 me-2"></i></button>
+                        <button class="btn btn-primary p-3" type="button"><i
+                                class="bi bi-search fs-5 me-2"></i></button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<ngr-menubar [showDialogBox]="showRightDialog" position="right" (closeDialogBox)="showRightDialog = false">
+    <app-right-side-bar></app-right-side-bar>
+</ngr-menubar>

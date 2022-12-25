@@ -5,6 +5,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { CategoriesModule } from 'src/app/components/categories/categories.module';
 import { ProductServicesModule } from 'src/app/components/product-services/product-services.module';
+import { NgrModelModule } from 'src/app/features/ngr-model/ngr-model.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ProductServicesModule } from 'src/app/components/product-services/produ
     CommonModule,
     HomeRoutingModule,
     CategoriesModule,
-    ProductServicesModule
+    ProductServicesModule,
+    NgrModelModule
   ]
 })
 export class HomeModule { }

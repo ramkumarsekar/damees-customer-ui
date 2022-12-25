@@ -1,0 +1,238 @@
+/* menubar STYLES
+-------------------------------*/
+// ngr-menubar {
+/* menubars are hidden by default */
+// display: none;
+
+.ngr-menubar {
+    /* menubar container fixed across whole screen */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-animation-name: fadeIn;
+    /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+    /* z-index must be higher than .ngr-menubar-background */
+    z-index: 1000;
+
+    /* enables scrolling for tall menubars */
+    overflow: auto;
+
+    .ngr-menubar-body {
+        width: 100%;
+        height: 100%;
+
+        .bottom {
+            padding: 20px;
+            background: #fff;
+            position: fixed;
+            bottom: 0;
+            /* margin exposes part of the menubar background */
+            margin-bottom: 40px;
+            -webkit-animation-name: bottom;
+            -webkit-animation-duration: 0.4s;
+            animation-name: bottom;
+            animation-duration: 0.4s;
+            border-radius: 20px;
+        }
+
+        .top {
+            padding: 20px;
+            background: #fff;
+            position: fixed;
+            top: 0;
+            /* margin exposes part of the menubar background */
+            margin-top: 40px;
+            -webkit-animation-name: top;
+            -webkit-animation-duration: 0.4s;
+            animation-name: top;
+            animation-duration: 0.4s;
+            border-radius: 20px;
+        }
+
+        .right {
+            padding: 20px;
+            background: var(--bs-primary);
+            position: fixed;
+            right: 0;
+            /* margin exposes part of the menubar background */
+            -webkit-animation-name: right;
+            -webkit-animation-duration: 0.4s;
+            animation-name: right;
+            animation-duration: 0.4s;
+            height: 100vh;
+            width: 300px;
+        }
+
+        .left {
+            padding: 20px;
+            background: #fff;
+            position: fixed;
+            right: 0;
+            /* margin exposes part of the menubar background */
+            margin-right: 40px;
+            -webkit-animation-name: left;
+            -webkit-animation-duration: 0.4s;
+            animation-name: left;
+            animation-duration: 0.4s;
+            border-radius: 20px;
+        }
+    }
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 280px;
+    border-radius: 30px;
+    /* Fade in the background */
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    padding: 6px 10px;
+}
+
+.ngr-menubar-background {
+    /* menubar background fixed across whole screen */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    /* semi-transparent black  */
+    background-color: #000;
+    opacity: 0.75;
+
+    /* z-index must be below .ngr-menubar and above everything else  */
+    z-index: 900;
+}
+
+// }
+
+body.ngr-menubar-open {
+    /* body overflow is hidden to hide main scrollbar when menubar window is open */
+    overflow: hidden;
+}
+
+/* Add Animation */
+@-webkit-keyframes bottom {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes bottom {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes top {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes top {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0px;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes right {
+    from {
+        right: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes right {
+    from {
+        right: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0px;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes left {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes left {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0px;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}

@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CategoriesComponent } from './categories.component';
-import { NgrModelModule } from 'src/app/features/ngr-model/ngr-model.module';
+import { RightSideBarComponent } from './right-side-bar.component';
 import { UnderWorkingModule } from 'src/app/modals/under-working/under-working.module';
+import { NgrModelModule } from 'src/app/features/ngr-model/ngr-model.module';
 
 
 
 @NgModule({
   declarations: [
-    CategoriesComponent
+    RightSideBarComponent
   ],
   imports: [
     CommonModule,
@@ -16,7 +16,7 @@ import { UnderWorkingModule } from 'src/app/modals/under-working/under-working.m
     UnderWorkingModule
   ],
   exports : [
-    CategoriesComponent
+    RightSideBarComponent
   ]
 })
-export class CategoriesModule { }
+export class RightSideBarModule { }

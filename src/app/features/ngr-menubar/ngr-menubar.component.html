@@ -1,0 +1,10 @@
+<div class="ngr-menubar">
+    <div class="ngr-menubar-body">
+        <div [class]="position">
+            <ng-content></ng-content>
+        </div>
+        <a class="bg-primary  close-btn" type="button"
+        (click)="close()"> <i class="bi bi-x-circle text-white"></i> </a>
+    </div>
+</div>
+<div (click)="close()" class="ngr-menubar-background"></div>

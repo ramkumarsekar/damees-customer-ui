@@ -25,3 +25,12 @@
         }
     }
 }
+
+.authentication{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bs-primary);
+    border-radius: 10px;
+    width: 100px;
+    margin: auto;
+}

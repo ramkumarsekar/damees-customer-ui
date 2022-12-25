@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --o",
     "build": "ng build",
-    "git-build": "ng build --prod --base-href https://qa.damees.com/",
-    "wrap":  "ngh --dir dist/damees-customer-module",
+    "git-build-stage": "ng build --prod --base-href https://qa.damees.com/",
+    "git-build-prod": "ng build --prod --base-href https://www.damees.com/",
+    "wrap": "ngh --dir dist/damees-customer-module",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "host": "ng serve --host=0.0.0.0"
