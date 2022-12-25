@@ -1,0 +1,236 @@
+/* MODAL STYLES
+-------------------------------*/
+// ngr-modal {
+/* modals are hidden by default */
+// display: none;
+
+.ngr-modal {
+  /* modal container fixed across whole screen */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-animation-name: fadeIn;
+  /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+  /* z-index must be higher than .ngr-modal-background */
+  z-index: 1000;
+
+  /* enables scrolling for tall modals */
+  overflow: auto;
+
+  .ngr-modal-body {
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .bottom {
+      padding: 20px;
+      background: #fff;
+      position: fixed;
+      bottom: 0;
+      /* margin exposes part of the modal background */
+      margin-bottom: 40px;
+      -webkit-animation-name: bottom;
+      -webkit-animation-duration: 0.4s;
+      animation-name: bottom;
+      animation-duration: 0.4s;
+      border-radius: 20px;
+    }
+
+    .top {
+      padding: 20px;
+      background: #fff;
+      position: fixed;
+      top: 0;
+      /* margin exposes part of the modal background */
+      margin-top: 40px;
+      -webkit-animation-name: top;
+      -webkit-animation-duration: 0.4s;
+      animation-name: top;
+      animation-duration: 0.4s;
+      border-radius: 20px;
+    }
+
+    .right {
+      padding: 20px;
+      background: #fff;
+      position: fixed;
+      right: 0;
+      /* margin exposes part of the modal background */
+      margin-right: 40px;
+      -webkit-animation-name: right;
+      -webkit-animation-duration: 0.4s;
+      animation-name: right;
+      animation-duration: 0.4s;
+      border-radius: 20px;
+    }
+
+    .left {
+      padding: 20px;
+      background: #fff;
+      position: fixed;
+      right: 0;
+      /* margin exposes part of the modal background */
+      margin-right: 40px;
+      -webkit-animation-name: left;
+      -webkit-animation-duration: 0.4s;
+      animation-name: left;
+      animation-duration: 0.4s;
+      border-radius: 20px;
+    }
+    .close-btn{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      border-radius: 10px;
+      padding: 6px 10px;
+    }
+  }
+}
+
+.ngr-modal-background {
+  /* modal background fixed across whole screen */
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /* semi-transparent black  */
+  background-color: #000;
+  opacity: 0.75;
+
+  /* z-index must be below .ngr-modal and above everything else  */
+  z-index: 900;
+}
+
+// }
+
+body.ngr-modal-open {
+  /* body overflow is hidden to hide main scrollbar when modal window is open */
+  overflow: hidden;
+}
+
+/* Add Animation */
+@-webkit-keyframes bottom {
+  from {
+    bottom: -300px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0px;
+    opacity: 1
+  }
+}
+
+@keyframes bottom {
+  from {
+    bottom: -300px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0px;
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes top {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+
+  to {
+    top: 0px;
+    opacity: 1
+  }
+}
+
+@keyframes top {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+
+  to {
+    top: 0px;
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes right {
+  from {
+    right: -300px;
+    opacity: 0
+  }
+
+  to {
+    top: 0px;
+    opacity: 1
+  }
+}
+
+@keyframes right {
+  from {
+    right: -300px;
+    opacity: 0
+  }
+
+  to {
+    top: 0px;
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes left {
+  from {
+    left: -300px;
+    opacity: 0
+  }
+
+  to {
+    top: 0px;
+    opacity: 1
+  }
+}
+
+@keyframes left {
+  from {
+    left: -300px;
+    opacity: 0
+  }
+
+  to {
+    top: 0px;
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}

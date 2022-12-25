@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopBarComponent implements OnInit {
 
+  showRightDialog : boolean = false;
+  login : boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {

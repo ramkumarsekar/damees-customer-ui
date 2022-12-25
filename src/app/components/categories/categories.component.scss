@@ -2,3 +2,75 @@
     max-width: 1100px;
     margin: auto;
 }
+
+.travelTools{
+    background-color: var(--bs-primary);
+    height: 173px !important;
+    width: 200px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    img{
+        width: 100px !important;
+        height: 75px !important;
+        margin: 0px !important;
+    }
+}
+
+@media screen and (max-width : 2160px) and (min-width : 1440px) {
+    .custom-card{
+        width: 200px;
+        img{
+            width: 75px; 
+            height: 75px; 
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (max-width : 1440px) and (min-width : 768px) {
+    .custom-card{
+        width: 200px;
+
+        img{
+            width: 75px; 
+            height: 75px; 
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (max-width : 768px) and (min-width : 568px) {
+    .custom-card{
+        width: 200px;
+
+        img{
+            width: 75px; 
+            height: 75px; 
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (max-width : 567px) {
+    .custom-card{
+        // width: 150px;
+
+        .travelTools{
+            
+            img{
+                width: 65px; 
+                height: 65px; 
+                margin: auto;
+            }
+        }
+
+        img{
+            width: 65px; 
+            height: 65px; 
+            margin: auto;
+        }
+
+    }
+}

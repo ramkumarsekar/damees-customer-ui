@@ -6,8 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
+  showDialog : boolean = false;
+  constructor() {
+    setTimeout(()=>{
+      this.showDialog = true;
+    },5000)
+   }
 
   ngOnInit(): void {
   }
