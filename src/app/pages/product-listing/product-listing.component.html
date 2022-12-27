@@ -1,3 +1,9 @@
 <div class="container">
-    <ngr-carousel></ngr-carousel>
+    <ngr-carousel>
+        <ng-container  *ngFor="let item of listofCategories">
+            <ng-container *ngrCarouselItem>
+                <app-categories [category]="item" [style]="'mx-4'"></app-categories>
+            </ng-container>
+        </ng-container>
+    </ngr-carousel>
 </div>

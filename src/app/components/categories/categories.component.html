@@ -1,19 +1,14 @@
-<div class="container">
-    <div class="row category-card" >
-        <div class="col-6 col-md-4" [ngClass]="{'col-md-6' : i == 6 || i == 7}" *ngFor="let item of listOfCategories; let i = index">
-            <div class="custom-card mx-auto">
-                <div class="card py-3 my-2 my-lg-4 my-xl-5 my-xxl-5 mx-auto" (click)="showDialog = !showDialog" [ngClass]="{'travelTools': item.name === 'Travel Toolz'}">
-                    <img class="card-img-top mt-2 cursor-pointer"
-                    [src]="item.imageURL" alt="Card image cap">
-                    <div class="card-body text-center" *ngIf="item.name != 'Travel Toolz'">
-                        <small class="text-primary"> {{item.name}} </small>
-                    </div>
-                </div>
-            </div>
+<div class="custom-card mx-auto">
+    <div class="card py-3 my-2 my-lg-4 my-xl-5 my-xxl-5 mx-2 mx-md-4" (click)="showDialog = !showDialog"
+        [ngClass]="{'travelTools': category.name === 'Travel Toolz'}">
+        <img class="card-img-top mt-2 cursor-pointer" [src]="category.imageURL" alt="Card image cap">
+        <div class="card-body text-center" *ngIf="category.name != 'Travel Toolz'">
+            <small class="text-primary"> {{category.name}} </small>
         </div>
     </div>
 </div>
 
+
 <ngr-model [showDialogBox]="showDialog" [accept]="'ok'" position="bottom" (closeDialogBox)="showDialog = false">
-    <app-under-working (closeDialogBox)="showDialog = false" ></app-under-working>
+    <app-under-working (closeDialogBox)="showDialog = false"></app-under-working>
 </ngr-model>

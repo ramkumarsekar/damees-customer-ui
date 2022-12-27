@@ -5,7 +5,6 @@ import { NgrCarouselItemDirective } from './ngr-carousel-item.directive';
 import { NgrCarouselItemElementDirective } from './ngr-carousel-item-element.directive';
 
 
-
 @NgModule({
   declarations: [
     NgrCarouselComponent,
@@ -16,7 +15,8 @@ import { NgrCarouselItemElementDirective } from './ngr-carousel-item-element.dir
     CommonModule
   ],
   exports : [
-    NgrCarouselComponent
+    NgrCarouselComponent,
+    NgrCarouselItemDirective
   ]
 })
 export class NgrCarouselModule { }

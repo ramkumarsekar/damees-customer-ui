@@ -1,1 +1,13 @@
-<p>ngr-carousel works!</p>
+<section class="carousel-wrapper" [ngStyle]="carouselWrapperStyle">
+    <ul class="carousel-inner" #carousel>
+        <li *ngFor="let item of items" class="ngrCarouselItemElement">
+            <ng-container [ngTemplateOutlet]="item.tpl"></ng-container>
+        </li>
+    </ul>
+    <ng-container *ngIf="showControls">
+        <div class="handlers">
+            <a type="button" class="btn btn-primary carousel__prev" (click)="prev()"><i class="bi bi-caret-left"></i></a>
+            <a type="button" class="btn btn-primary carousel__next" (click)="next()"><i class="bi bi-caret-right"></i></a>
+        </div>
+    </ng-container>
+</section>
