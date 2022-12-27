@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row category-card" >
-        <div class="col-6 col-md-4" *ngFor="let item of listOfCategories">
+        <div class="col-6 col-md-4" [ngClass]="{'col-md-6' : i == 6 || i == 7}" *ngFor="let item of listOfCategories; let i = index">
             <div class="custom-card mx-auto">
                 <div class="card py-3 my-2 my-lg-4 my-xl-5 my-xxl-5 mx-auto" (click)="showDialog = !showDialog" [ngClass]="{'travelTools': item.name === 'Travel Toolz'}">
                     <img class="card-img-top mt-2 cursor-pointer"

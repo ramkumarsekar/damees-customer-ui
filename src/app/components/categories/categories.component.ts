@@ -32,10 +32,7 @@ export class CategoriesComponent implements OnInit {
     },{
       imageURL : "/assets/images/categories/eventFabrication.png",
       name : "Event Fabrication"
-    },{
-      imageURL : "/assets/images/categories/travelTools.png",
-      name : "Travel Toolz"
-    },
+    }
   ]
   constructor() { }
 

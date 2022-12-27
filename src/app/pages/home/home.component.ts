@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   showDialog : boolean = false;
+  login : boolean = true;
+  
   constructor() {
     setTimeout(()=>{
       this.showDialog = true;

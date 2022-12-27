@@ -26,6 +26,40 @@
     }
 }
 
+.activeBtn{
+    background-color: var(--bs-primary);
+    color: #fff;
+    transition: 1s;
+}
+
+.inActiveBtn{
+    background-color: #fff;
+    color: var(--bs-primary);
+    transition: .2s;
+}
+
+.search-bar{
+    margin: auto;
+    max-width: 700px;
+    input[type=text]{
+        border-radius: 30px;
+        border: 5px solid;
+        border-top-left-radius: 30px !important;
+        border-bottom-left-radius: 30px !important;
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }:focus{
+        border-color: var(--bs-primary-rgb);
+    }
+    button{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border: 5px solid var(--bs-primary);
+    }
+}
+
 .authentication{
     display: flex;
     flex-direction: column;
