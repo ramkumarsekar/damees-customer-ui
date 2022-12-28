@@ -30,9 +30,7 @@ export class NgrCarouselComponent implements OnInit {
   constructor(private builder: AnimationBuilder) {
   }
 
-  ngOnInit(): void {
-    console.log(this.items)
-  }
+  ngOnInit(): void {  }
 
   private buildAnimation(offset : any, time: any) {
     return this.builder.build([
@@ -97,10 +95,8 @@ export class NgrCarouselComponent implements OnInit {
    * For use on initial load, and when changing viewport size.
    */
   reSizeCarousel(): void {
-    debugger
     // re-size the container
-    this.itemWidth =
-      this.itemsElements?.first?.nativeElement.getBoundingClientRect().width;
+    this.itemWidth = 260;
     this.carouselWrapperStyle = {
       width: `${this.itemWidth}px * 5`,
     };
