@@ -96,7 +96,7 @@ export class NgrCarouselComponent implements OnInit {
    */
   reSizeCarousel(): void {
     // re-size the container
-    this.itemWidth = this.itemsElements?.first?.nativeElement.getBoundingClientRect().width;;
+    this.itemWidth = this.itemsElements?.first?.nativeElement.getBoundingClientRect().width;
     this.carouselWrapperStyle = {
       width: `${this.itemWidth}px * 5`,
     };

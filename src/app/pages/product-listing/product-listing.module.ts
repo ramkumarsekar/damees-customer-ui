@@ -6,6 +6,7 @@ import { ProductListingComponent } from './product-listing.component';
 import { NgrCarouselModule } from 'src/app/features/ngr-carousel/ngr-carousel.module';
 import { CategoriesModule } from 'src/app/components/categories/categories.module';
 import { NgrCarouselItemDirective } from 'src/app/features/ngr-carousel/ngr-carousel-item.directive';
+import { ProductCategoryModule } from 'src/app/components/product-category/product-category.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { NgrCarouselItemDirective } from 'src/app/features/ngr-carousel/ngr-caro
     ProductListingRoutingModule,
     NgrCarouselModule,
     CategoriesModule,
+    ProductCategoryModule
   ]
 })
 export class ProductListingModule { }

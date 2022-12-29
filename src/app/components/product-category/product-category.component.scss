@@ -1,0 +1,13 @@
+
+.offers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+    a {
+      padding: 15px 25px;
+      border-radius: 20px;
+      width: 170px;
+      margin: 20px;
+    }
+  }
