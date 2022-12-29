@@ -46,7 +46,7 @@ export class NgrCarouselComponent implements OnInit {
    * Progresses the carousel forward by 1 slide.
    */
   next() {
-    if (this.currentSlide + 1 == this.items.length) {
+    if (this.currentSlide + 5 == this.items.length) {
       let arr = this.items.toArray();
       let first : any= arr.shift();
       arr = arr.concat([first]);
@@ -96,7 +96,7 @@ export class NgrCarouselComponent implements OnInit {
    */
   reSizeCarousel(): void {
     // re-size the container
-    this.itemWidth = 260;
+    this.itemWidth = this.itemsElements?.first?.nativeElement.getBoundingClientRect().width;;
     this.carouselWrapperStyle = {
       width: `${this.itemWidth}px * 5`,
     };

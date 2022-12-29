@@ -11,28 +11,28 @@ export class HomeComponent implements OnInit {
 
   listofCategories : any[] = [
     {
-      imageURL : "/assets/images/categories/eventManagement.png",
+      imageURL : "assets/images/categories/eventManagement.png",
       name : "Event Management"
     },{
-      imageURL : "/assets/images/categories/photography.png",
+      imageURL : "assets/images/categories/photography.png",
       name : "Photography"
     },{
-      imageURL : "/assets/images/categories/coordinations.png",
+      imageURL : "assets/images/categories/coordinations.png",
       name : "Coordinations"
     },{
-      imageURL : "/assets/images/categories/contests.png",
+      imageURL : "assets/images/categories/contests.png",
       name : "Contests"
     },{
-      imageURL : "/assets/images/categories/businessConsultation.png",
+      imageURL : "assets/images/categories/businessConsultation.png",
       name : "Business Consultation"
     },{
-      imageURL : "/assets/images/categories/advertisement.png",
+      imageURL : "assets/images/categories/advertisement.png",
       name : "Advertisement"
     },{
-      imageURL : "/assets/images/categories/branding.png",
+      imageURL : "assets/images/categories/branding.png",
       name : "Branding"
     },{
-      imageURL : "/assets/images/categories/eventFabrication.png",
+      imageURL : "assets/images/categories/eventFabrication.png",
       name : "Event Fabrication"
     }
   ]
