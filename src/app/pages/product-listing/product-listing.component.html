@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="category-title">
+        <p class="fs-1 text-center text-primary">Photography</p>
+    </div>
+    <ngr-carousel>
+        <ng-container *ngFor="let item of listofCategories">
+            <ng-container *ngrCarouselItem>
+                <app-categories [category]="item" [style]="'mx-4'"></app-categories>
+            </ng-container>
+        </ng-container>
+    </ngr-carousel>
+
+    <div *ngFor="let item of [1,2,3,4,5]" >
+        <product-category  ></product-category>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+<div class="card m-5 product-card">
+    <div class="card-body p-5">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="title">
+                    <h4 class="text-primary">
+                        Wedding Photography
+                    </h4>
+                </div>
+                <div class="content-body">
+                    <p class="description">
+                        Wedding planning service provider which is located in the city of Chennai. They are one of
+                        the leading wedding planners in the city and can offer to provide you with creative and
+                        quality services to make your wedding and its other related functions. They have been
+                        providing their services for more than ten years now, winning the hearts of their clients
+                        with quality services. They specialize in innovative and unique wedding ideas to make your
+                        wedding one of a kind and a truly memorable experience.
+                    </p>
+                </div>
+                <p class="text-primary fs-5 text-uppercase text-center">
+                    Result guaranteed
+                </p>
+                <button (click)="addRequirement=true" class="btn btn-primary d-flex mx-auto">
+                    Add Your Requirements
+                </button>
+            </div>
+            <div class="col-12 col-md-6">
+                <p class="title text-primary fs-5 text-uppercase text-center">
+                    Offers and Benefits
+                </p>
+                <div class="offers">
+                    <a class="btn btn-white fs-5 shadow-lg">
+                        #OFFER 1
+                    </a>
+                    <a class="btn btn-white fs-5 shadow-lg">
+                        #OFFER 2
+                    </a>
+                    <a class="btn btn-white fs-5 shadow-lg">
+                        #OFFER 3
+                    </a>
+                    <a class="btn btn-primary fs-5 shadow-lg">
+                        #OFFER 4
+                    </a>
+                </div>
+                <div class="terms">
+                    To apply the offers make sure have an valid user details are verified.
+                    you can send them a personalized email message or a push notification with a discount on their
+                    preferred category or wishlist items.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<ngr-model [showDialogBox]="addRequirement" [closeButton]="true" position="bottom" (closeDialogBox)="addRequirement = false">
+    <requirements (closeDialogBox)="addRequirement = false"></requirements>
+</ngr-model>

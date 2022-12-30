@@ -1,4 +1,50 @@
-<app-categories></app-categories>
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-4">
+            <div class="post mt-2 text-center d-none d-md-block">
+                <button class="btn btn-primary text-white">Post Your Needs</button>
+            </div>
+            <div class="hire mt-2 text-center d-none d-md-block">
+                <button class="btn btn-primary text-white">Hire Yourself</button>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="authentication mt-4 text-center">
+                <button (click)="login = false" [ngClass]="{'activeBtn': !login}"
+                    class="btn btn-white border-primary rounded-bottom-0">
+                    SignUp
+                </button>
+                <button (click)="login = true" [ngClass]="{'activeBtn': login}"
+                    class="btn btn-white border-primary rounded-top-0">
+                    Login
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="col-12">
+                <div class="search-bar container mt-5">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control border-primary p-3" placeholder="Search...">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary p-3" type="button"><i
+                                    class="bi bi-search fs-5 me-2"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="category-container container">
+    <div class="row category-card">
+        <div class="col-6 col-md-4" *ngFor="let item of listofCategories">
+            <app-categories [category]="item" [style]="'mx-auto'"></app-categories>
+        </div>
+    </div>
+</div>
 
 <app-product-services></app-product-services>
 

@@ -1,0 +1,20 @@
+
+.product-card{
+  transition: 1s;
+}
+.product-card:hover{
+  z-index: 9;
+  transform: scale(1.15);
+}
+.offers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+    a {
+      padding: 15px 25px;
+      border-radius: 20px;
+      width: 170px;
+      margin: 20px;
+    }
+  }
