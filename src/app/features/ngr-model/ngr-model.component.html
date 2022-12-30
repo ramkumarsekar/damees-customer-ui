@@ -4,10 +4,10 @@
             <a class="bg-primary  close-btn" *ngIf="closeButton" type="button"
         (click)="close()"> <i class="bi bi-x-circle text-white"></i> </a>
             <ng-content></ng-content>
-            <div class="buttons"  style="position: absolute; bottom: 30px; right: 30px;">
-                <a *ngIf="deny" class="btn btn-primary mx-1" type="button"
+            <div class="buttons"  style="float: right;">
+                <a *ngIf="deny" class="btn btn-primary mx-1 mb-3" type="button"
                 (click)="close()">{{deny}}</a>
-                <a *ngIf="accept" class="btn btn-primary mx-1" type="button" 
+                <a *ngIf="accept" class="btn btn-primary mx-1 mb-3" type="button" 
                 (click)="close()">{{accept}}</a>
             </div>
             

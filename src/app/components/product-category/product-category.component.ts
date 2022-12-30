@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductCategoryComponent implements OnInit {
 
+  addRequirement : boolean = false;
+  
   constructor() { }
 
   ngOnInit(): void {

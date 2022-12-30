@@ -4,6 +4,7 @@ import { CategoriesComponent } from './categories.component';
 import { NgrModelModule } from 'src/app/features/ngr-model/ngr-model.module';
 import { UnderWorkingModule } from 'src/app/modals/under-working/under-working.module';
 import { NgrCarouselItemDirective } from 'src/app/features/ngr-carousel/ngr-carousel-item.directive';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -14,7 +15,8 @@ import { NgrCarouselItemDirective } from 'src/app/features/ngr-carousel/ngr-caro
   imports: [
     CommonModule,
     NgrModelModule,
-    UnderWorkingModule
+    // UnderWorkingModule,
+    RouterModule
   ],
   exports : [
     CategoriesComponent

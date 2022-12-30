@@ -1,11 +1,13 @@
-<div class="card m-5">
+<div class="card m-5 product-card">
     <div class="card-body p-5">
         <div class="row">
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <div class="title">
                     <h4 class="text-primary">
                         Wedding Photography
                     </h4>
+                </div>
+                <div class="content-body">
                     <p class="description">
                         Wedding planning service provider which is located in the city of Chennai. They are one of
                         the leading wedding planners in the city and can offer to provide you with creative and
@@ -14,15 +16,15 @@
                         with quality services. They specialize in innovative and unique wedding ideas to make your
                         wedding one of a kind and a truly memorable experience.
                     </p>
-                    <p class="text-primary fs-5 text-uppercase text-center">
-                        Result guaranteed
-                    </p>
-                    <button class="btn btn-primary d-flex mx-auto">
-                        Add Your Requirements
-                    </button>
                 </div>
+                <p class="text-primary fs-5 text-uppercase text-center">
+                    Result guaranteed
+                </p>
+                <button (click)="addRequirement=true" class="btn btn-primary d-flex mx-auto">
+                    Add Your Requirements
+                </button>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <p class="title text-primary fs-5 text-uppercase text-center">
                     Offers and Benefits
                 </p>
@@ -49,3 +51,8 @@
         </div>
     </div>
 </div>
+
+
+<ngr-model [showDialogBox]="addRequirement" [closeButton]="true" position="bottom" (closeDialogBox)="addRequirement = false">
+    <requirements (closeDialogBox)="addRequirement = false"></requirements>
+</ngr-model>

@@ -13,7 +13,8 @@ input[type="url"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
-.uneditable-input:focus {   
+.uneditable-input:focus ,
+select.form-control:focus{   
   border-color: rgba(14,61,68,0.8);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(14,61,68,0.6);
   outline: 0 none;
@@ -25,4 +26,29 @@ input{
 
 .dropdown-toggle{
   border-radius: 10px !important;
+}
+
+
+
+select.form-control{
+  max-width: 400px;
+  background-image:
+  linear-gradient(45deg, transparent 50%, rgba(14,61,68,0.8) 50%),
+  linear-gradient(135deg, rgba(14,61,68,0.8) 50%, transparent 50%),
+  radial-gradient(#ddd 70%, transparent 72%);
+background-position:
+  calc(100% - 20px) calc(1em + 2px),
+  calc(100% - 15px) calc(1em + 2px),
+  calc(100% - .5em) .5em;
+background-size:
+  5px 5px,
+  5px 5px,
+  1.5em 1.5em;
+background-repeat: no-repeat;
+border-color: rgba(14,61,68,0.8);
+}
+
+select:hover{
+  background-color: rgba(14,61,68);
+  color: #fff;
 }

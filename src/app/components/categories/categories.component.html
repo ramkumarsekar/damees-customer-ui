@@ -1,5 +1,5 @@
-<div class="custom-card mx-auto">
-    <div class="card py-3 my-2 my-lg-4 my-xl-5 my-xxl-5 mx-2 mx-md-4" (click)="showDialog = !showDialog"
+<div class="custom-card mx-auto cursor-pointer" [routerLink]="['/products']">
+    <div class="card py-3 my-2 my-lg-4 my-xl-5 my-xxl-5 mx-2 mx-md-4"
         [ngClass]="{'travelTools': category.name === 'Travel Toolz'}">
         <img class="card-img-top mt-2 cursor-pointer" [src]="category.imageURL" alt="Card image cap">
         <div class="card-body text-center" *ngIf="category.name != 'Travel Toolz'">
@@ -8,7 +8,7 @@
     </div>
 </div>
 
-
+<!-- 
 <ngr-model [showDialogBox]="showDialog" [accept]="'ok'" position="bottom" (closeDialogBox)="showDialog = false">
     <app-under-working (closeDialogBox)="showDialog = false"></app-under-working>
-</ngr-model>
+</ngr-model> -->
