@@ -1,10 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductCategoryComponent } from './product-category.component';
-import { NgrModelModule } from 'src/app/features/ngr-model/ngr-model.module';
-import { RequirementsModule } from 'src/app/pages/requirements/requirements.module';
-
-
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -12,8 +9,7 @@ import { RequirementsModule } from 'src/app/pages/requirements/requirements.modu
   ],
   imports: [
     CommonModule,
-    NgrModelModule,
-    RequirementsModule
+    RouterModule
   ],
   exports : [
     ProductCategoryComponent

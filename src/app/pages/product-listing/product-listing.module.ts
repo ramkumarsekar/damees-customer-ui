@@ -7,10 +7,11 @@ import { NgrCarouselModule } from 'src/app/features/ngr-carousel/ngr-carousel.mo
 import { CategoriesModule } from 'src/app/components/categories/categories.module';
 import { NgrCarouselItemDirective } from 'src/app/features/ngr-carousel/ngr-carousel-item.directive';
 import { ProductCategoryModule } from 'src/app/components/product-category/product-category.module';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   declarations: [
-    ProductListingComponent,
+    ProductListingComponent
   ],
   imports: [
     CommonModule,

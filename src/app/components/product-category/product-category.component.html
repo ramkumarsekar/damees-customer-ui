@@ -1,4 +1,4 @@
-<div class="card m-5 product-card">
+<div class="card my-3 m-md-3 m-lg-5 product-card">
     <div class="card-body p-5">
         <div class="row">
             <div class="col-12 col-md-6">
@@ -20,7 +20,7 @@
                 <p class="text-primary fs-5 text-uppercase text-center">
                     Result guaranteed
                 </p>
-                <button (click)="addRequirement=true" class="btn btn-primary d-flex mx-auto">
+                <button [routerLink]="['/products/requirements']" class="btn btn-primary d-flex mx-auto">
                     Add Your Requirements
                 </button>
             </div>
@@ -51,8 +51,3 @@
         </div>
     </div>
 </div>
-
-
-<ngr-model [showDialogBox]="addRequirement" [closeButton]="true" position="bottom" (closeDialogBox)="addRequirement = false">
-    <requirements (closeDialogBox)="addRequirement = false"></requirements>
-</ngr-model>

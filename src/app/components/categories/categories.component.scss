@@ -15,7 +15,7 @@
 
 @media screen and (max-width : 2160px) and (min-width : 1440px) {
     .custom-card{
-        width: 260px;
+        width: 240px;
         img{
             width: 75px; 
             height: 75px; 
@@ -30,7 +30,7 @@
 
 @media screen and (max-width : 1440px) and (min-width : 768px) {
     .custom-card{
-        width: 260px;
+        width: 240px;
 
         img{
             width: 75px; 
@@ -57,10 +57,10 @@
 
 @media screen and (max-width : 567px) {
     .custom-card{
-        // width: 150px;
+        width: 175px;
         img{
-            width: 65px; 
-            height: 65px; 
+            width: 60px; 
+            height: 60px; 
             margin: auto;
         }
 

@@ -6,12 +6,14 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./requirements.component.scss']
 })
 export class RequirementsComponent implements OnInit {
-
-  @Output() closeDialogBox = new EventEmitter<any>();
+  defaultView : boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
+    setTimeout(() => {
+      this.defaultView = true;
+    }, 100);
   }
 
 }

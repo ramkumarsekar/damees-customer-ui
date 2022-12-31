@@ -2,17 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RequirementsComponent } from './requirements.component';
 
+import { RequirementsRoutingModule } from './requirements-routing.module';
 
 
 @NgModule({
-  declarations: [
-    RequirementsComponent
-  ],
+  declarations: [RequirementsComponent],
   imports: [
-    CommonModule
-  ],
-  exports : [
-    RequirementsComponent
+    CommonModule,
+    RequirementsRoutingModule
   ]
 })
 export class RequirementsModule { }

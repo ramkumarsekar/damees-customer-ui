@@ -11,6 +11,18 @@
     }
   }
 
+  .card{
+    transition: 2s;
+  }
+
+  .expand-view{
+    transform: scale(1.25);
+  }
+
+  .default-view{
+    transform: scale(1);
+  }
+
 // .title {
 //     h5{
 //         border-radius: 10px;
