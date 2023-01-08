@@ -8,7 +8,8 @@ import { AuthService } from 'src/app/auth/auth.service';
 })
 export class HomeComponent implements OnInit {
   showDialog : boolean = false;
-  login : boolean = true;
+  login : boolean = false;
+  signUp : boolean = false;
 
   listofCategories : any[] = [
     {
@@ -65,9 +66,9 @@ export class HomeComponent implements OnInit {
     // })
   }
 
-  toLogin(){
-    debugger
-    this.authService.toLogin(true);
-  }
+  // toLogin(){
+  //   debugger
+  //   this.authService.toLogin(true);
+  // }
 
 }
