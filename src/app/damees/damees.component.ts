@@ -10,6 +10,7 @@ export class DameesComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
