@@ -4,6 +4,11 @@ import { DameesComponent } from './damees.component';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: 'dashboard',
+    pathMatch: 'full',
+  },
+  {
     path : '',
     component : DameesComponent,
     children : [
@@ -16,6 +21,10 @@ const routes: Routes = [
           loadChildren:() => import('../pages/product-listing/product-listing.module').then(m => m.ProductListingModule)
         }
     ]
+  },
+  {
+    path: '**',
+    redirectTo: ''
   }
 ];
 

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DameesModule } from './damees/damees.module';
 
 const routes: Routes = [
   {
