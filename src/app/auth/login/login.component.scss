@@ -1,0 +1,18 @@
+.but_log{
+    border-radius: 20px;
+}
+.signUp{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+@media (min-width: 767px){
+    .login-content{
+        input[type="text"]{
+            width: 320px;
+        }
+    }   
+}

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/auth/auth.service';
 
 @Component({
   selector: 'app-home',
@@ -44,13 +45,29 @@ export class HomeComponent implements OnInit {
     }
   ]
   
-  constructor() {
+  constructor(public authService:AuthService) {
     setTimeout(()=>{
       this.showDialog = true;
     },10000)
+    
+
    }
 
   ngOnInit(): void {
+    // this.authService.showLoginModule$.subscribe((data)=>{
+    //   debugger
+    //   if(data){
+    //     this.showDialog = true;
+    //   }
+    //   else{
+    //     this.showDialog = false;
+    //   }
+    // })
+  }
+
+  toLogin(){
+    debugger
+    this.authService.toLogin(true);
   }
 
 }

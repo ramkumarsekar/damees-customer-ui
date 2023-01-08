@@ -18,7 +18,7 @@ export class NgrModelComponent implements OnInit {
 
   ngOnChanges(changes: SimpleChanges) {
     if(this.showDialogBox){
-      this.modal[0].open();
+      this.modal[0]?.open();
       this.open();
     }else{
       this.close();
